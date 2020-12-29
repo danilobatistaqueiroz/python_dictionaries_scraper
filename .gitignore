@@ -1,3 +1,11 @@
 .history
 thesaurus
 translations
+*.mp3
+*.csv
+*.txt
+*.log
+input/**
+output/**
+mp3/**
+logs/**

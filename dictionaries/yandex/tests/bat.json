@@ -1,0 +1,463 @@
+{
+    "head": {},
+    "en": {
+      "syn": [
+        {
+          "text": "bat",
+          "pos": {
+            "code": "nn",
+            "text": "n",
+            "tooltip": "noun"
+          },
+          "ts": "bæt",
+          "tr": [
+            {
+              "text": "pipistrelle",
+              "pos": {
+                "code": "nn",
+                "text": "n",
+                "tooltip": "noun"
+              }
+            },
+            {
+              "text": "racket",
+              "pos": {
+                "code": "nn",
+                "text": "n",
+                "tooltip": "noun"
+              },
+              "syn": [
+                {
+                  "text": "paddle",
+                  "pos": {
+                    "code": "nn",
+                    "text": "n",
+                    "tooltip": "noun"
+                  }
+                }
+              ]
+            },
+            {
+              "text": "myotis",
+              "pos": {
+                "code": "nn",
+                "text": "n",
+                "tooltip": "noun"
+              }
+            },
+            {
+              "text": "cricket bat",
+              "pos": {
+                "code": "nn",
+                "text": "n",
+                "tooltip": "noun"
+              }
+            },
+            {
+              "text": "club",
+              "pos": {
+                "code": "nn",
+                "text": "n",
+                "tooltip": "noun"
+              },
+              "syn": [
+                {
+                  "text": "cudgel",
+                  "pos": {
+                    "code": "nn",
+                    "text": "n",
+                    "tooltip": "noun"
+                  }
+                }
+              ]
+            },
+            {
+              "text": "baton",
+              "pos": {
+                "code": "nn",
+                "text": "n",
+                "tooltip": "noun"
+              },
+              "syn": [
+                {
+                  "text": "truncheon",
+                  "pos": {
+                    "code": "nn",
+                    "text": "n",
+                    "tooltip": "noun"
+                  }
+                },
+                {
+                  "text": "cane",
+                  "pos": {
+                    "code": "nn",
+                    "text": "n",
+                    "tooltip": "noun"
+                  }
+                },
+                {
+                  "text": "bludgeon",
+                  "pos": {
+                    "code": "nn",
+                    "text": "n",
+                    "tooltip": "noun"
+                  }
+                },
+                {
+                  "text": "bastinado",
+                  "pos": {
+                    "code": "nn",
+                    "text": "n",
+                    "tooltip": "noun"
+                  }
+                },
+                {
+                  "text": "nightstick",
+                  "pos": {
+                    "code": "nn",
+                    "text": "n",
+                    "tooltip": "noun"
+                  }
+                },
+                {
+                  "text": "rod",
+                  "pos": {
+                    "code": "nn",
+                    "text": "n",
+                    "tooltip": "noun"
+                  }
+                },
+                {
+                  "text": "billy",
+                  "pos": {
+                    "code": "nn",
+                    "text": "n",
+                    "tooltip": "noun"
+                  }
+                },
+                {
+                  "text": "staff",
+                  "pos": {
+                    "code": "nn",
+                    "text": "n",
+                    "tooltip": "noun"
+                  }
+                }
+              ]
+            },
+            {
+              "text": "beat",
+              "pos": {
+                "code": "vrb",
+                "text": "v",
+                "tooltip": "verb"
+              },
+              "syn": [
+                {
+                  "text": "thrash",
+                  "pos": {
+                    "code": "vrb",
+                    "text": "v",
+                    "tooltip": "verb"
+                  }
+                },
+                {
+                  "text": "pummel",
+                  "pos": {
+                    "code": "vrb",
+                    "text": "v",
+                    "tooltip": "verb"
+                  }
+                },
+                {
+                  "text": "smash",
+                  "pos": {
+                    "code": "vrb",
+                    "text": "v",
+                    "tooltip": "verb"
+                  }
+                },
+                {
+                  "text": "slap",
+                  "pos": {
+                    "code": "vrb",
+                    "text": "v",
+                    "tooltip": "verb"
+                  }
+                }
+              ]
+            },
+            {
+              "text": "batter",
+              "pos": {
+                "code": "nn",
+                "text": "n",
+                "tooltip": "noun"
+              },
+              "syn": [
+                {
+                  "text": "bang",
+                  "pos": {
+                    "code": "nn",
+                    "text": "n",
+                    "tooltip": "noun"
+                  }
+                }
+              ]
+            },
+            {
+              "text": "clap",
+              "pos": {
+                "code": "vrb",
+                "text": "v",
+                "tooltip": "verb"
+              },
+              "syn": [
+                {
+                  "text": "slam",
+                  "pos": {
+                    "code": "vrb",
+                    "text": "v",
+                    "tooltip": "verb"
+                  }
+                }
+              ]
+            },
+            {
+              "text": "bash",
+              "pos": {
+                "code": "nn",
+                "text": "n",
+                "tooltip": "noun"
+              },
+              "syn": [
+                {
+                  "text": "strike",
+                  "pos": {
+                    "code": "nn",
+                    "text": "n",
+                    "tooltip": "noun"
+                  }
+                },
+                {
+                  "text": "whack",
+                  "pos": {
+                    "code": "nn",
+                    "text": "n",
+                    "tooltip": "noun"
+                  }
+                },
+                {
+                  "text": "punch",
+                  "pos": {
+                    "code": "nn",
+                    "text": "n",
+                    "tooltip": "noun"
+                  }
+                }
+              ]
+            },
+            {
+              "text": "wallop",
+              "pos": {
+                "code": "nn",
+                "text": "n",
+                "tooltip": "noun"
+              },
+              "syn": [
+                {
+                  "text": "whip",
+                  "pos": {
+                    "code": "nn",
+                    "text": "n",
+                    "tooltip": "noun"
+                  }
+                },
+                {
+                  "text": "smack",
+                  "pos": {
+                    "code": "nn",
+                    "text": "n",
+                    "tooltip": "noun"
+                  }
+                }
+              ]
+            },
+            {
+              "text": "hit",
+              "pos": {
+                "code": "vrb",
+                "text": "v",
+                "tooltip": "verb"
+              }
+            }
+          ]
+        }
+      ],
+      "deriv": [
+        {
+          "text": "bat",
+          "pos": {
+            "code": "nn",
+            "text": "n",
+            "tooltip": "noun"
+          },
+          "ts": "bæt",
+          "tr": [
+            {
+              "text": "batsman",
+              "pos": {
+                "code": "nn",
+                "text": "n",
+                "tooltip": "noun"
+              },
+              "syn": [
+                {
+                  "text": "batting",
+                  "pos": {
+                    "code": "nn",
+                    "text": "n",
+                    "tooltip": "noun"
+                  }
+                }
+              ]
+            },
+            {
+              "text": "bating",
+              "pos": {
+                "code": "adj",
+                "text": "adj",
+                "tooltip": "adjective"
+              }
+            }
+          ]
+        },
+        {
+          "text": "bat",
+          "pos": {
+            "code": "vrb",
+            "text": "v",
+            "tooltip": "verb"
+          },
+          "ts": "bæt",
+          "tr": [
+            {
+              "text": "batted",
+              "pos": {
+                "code": "adj",
+                "text": "adj",
+                "tooltip": "adjective"
+              }
+            }
+          ]
+        }
+      ],
+      "ant": []
+    },
+    "en-pt": {
+      "regular": [
+        {
+          "text": "bat",
+          "pos": {
+            "code": "nn",
+            "text": "n",
+            "tooltip": "noun"
+          },
+          "ts": "bæt",
+          "tr": [
+            {
+              "text": "morcego",
+              "pos": {
+                "code": "nn",
+                "text": "n",
+                "tooltip": "noun"
+              },
+              "gen": {
+                "code": "m",
+                "text": "m",
+                "tooltip": "masculine"
+              },
+              "syn": [
+                {
+                  "text": "bastao",
+                  "pos": {
+                    "code": "nn",
+                    "text": "n",
+                    "tooltip": "noun"
+                  },
+                  "gen": {
+                    "code": "m",
+                    "text": "m",
+                    "tooltip": "masculine"
+                  }
+                },
+                {
+                  "text": "taco",
+                  "pos": {
+                    "code": "nn",
+                    "text": "n",
+                    "tooltip": "noun"
+                  },
+                  "gen": {
+                    "code": "m",
+                    "text": "m",
+                    "tooltip": "masculine"
+                  }
+                },
+                {
+                  "text": "quiroptero",
+                  "pos": {
+                    "code": "nn",
+                    "text": "n",
+                    "tooltip": "noun"
+                  },
+                  "gen": {
+                    "code": "m",
+                    "text": "m",
+                    "tooltip": "masculine"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "bat",
+          "pos": {
+            "code": "vrb",
+            "text": "v",
+            "tooltip": "verb"
+          },
+          "ts": "bæt",
+          "tr": [
+            {
+              "text": "rebater",
+              "pos": {
+                "code": "vrb",
+                "text": "v",
+                "tooltip": "verb"
+              },
+              "syn": [
+                {
+                  "text": "morcegar",
+                  "pos": {
+                    "code": "vrb",
+                    "text": "v",
+                    "tooltip": "verb"
+                  }
+                },
+                {
+                  "text": "golpear",
+                  "pos": {
+                    "code": "vrb",
+                    "text": "v",
+                    "tooltip": "verb"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }

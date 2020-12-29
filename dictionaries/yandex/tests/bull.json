@@ -1,0 +1,347 @@
+{
+    "head": {},
+    "en": {
+      "syn": [
+        {
+          "text": "bull",
+          "pos": {
+            "code": "nn",
+            "text": "n",
+            "tooltip": "noun"
+          },
+          "ts": "bʊl",
+          "tr": [
+            {
+              "text": "calf",
+              "pos": {
+                "code": "nn",
+                "text": "n",
+                "tooltip": "noun"
+              },
+              "syn": [
+                {
+                  "text": "ox",
+                  "pos": {
+                    "code": "nn",
+                    "text": "n",
+                    "tooltip": "noun"
+                  }
+                },
+                {
+                  "text": "bullock",
+                  "pos": {
+                    "code": "nn",
+                    "text": "n",
+                    "tooltip": "noun"
+                  }
+                },
+                {
+                  "text": "buffalo",
+                  "pos": {
+                    "code": "nn",
+                    "text": "n",
+                    "tooltip": "noun"
+                  }
+                },
+                {
+                  "text": "taurus",
+                  "pos": {
+                    "code": "nn",
+                    "text": "n",
+                    "tooltip": "noun"
+                  }
+                }
+              ]
+            },
+            {
+              "text": "nonsense",
+              "pos": {
+                "code": "nn",
+                "text": "n",
+                "tooltip": "noun"
+              },
+              "syn": [
+                {
+                  "text": "hooey",
+                  "pos": {
+                    "code": "nn",
+                    "text": "n",
+                    "tooltip": "noun"
+                  }
+                },
+                {
+                  "text": "humbug",
+                  "pos": {
+                    "code": "nn",
+                    "text": "n",
+                    "tooltip": "noun"
+                  }
+                },
+                {
+                  "text": "rubbish",
+                  "pos": {
+                    "code": "nn",
+                    "text": "n",
+                    "tooltip": "noun"
+                  }
+                },
+                {
+                  "text": "balderdash",
+                  "pos": {
+                    "code": "nn",
+                    "text": "n",
+                    "tooltip": "noun"
+                  }
+                }
+              ]
+            },
+            {
+              "text": "muscle",
+              "pos": {
+                "code": "nn",
+                "text": "n",
+                "tooltip": "noun"
+              }
+            },
+            {
+              "text": "policeman",
+              "pos": {
+                "code": "nn",
+                "text": "n",
+                "tooltip": "noun"
+              }
+            },
+            {
+              "text": "crap",
+              "pos": {
+                "code": "nn",
+                "text": "n",
+                "tooltip": "noun"
+              }
+            },
+            {
+              "text": "bullshit",
+              "pos": {
+                "code": "nn",
+                "text": "n",
+                "tooltip": "noun"
+              },
+              "syn": [
+                {
+                  "text": "drivel",
+                  "pos": {
+                    "code": "nn",
+                    "text": "n",
+                    "tooltip": "noun"
+                  }
+                },
+                {
+                  "text": "hogwash",
+                  "pos": {
+                    "code": "nn",
+                    "text": "n",
+                    "tooltip": "noun"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "deriv": [
+        {
+          "text": "bull",
+          "pos": {
+            "code": "nn",
+            "text": "n",
+            "tooltip": "noun"
+          },
+          "ts": "bʊl",
+          "tr": [
+            {
+              "text": "bullring",
+              "pos": {
+                "code": "nn",
+                "text": "n",
+                "tooltip": "noun"
+              },
+              "syn": [
+                {
+                  "text": "bullet",
+                  "pos": {
+                    "code": "nn",
+                    "text": "n",
+                    "tooltip": "noun"
+                  }
+                },
+                {
+                  "text": "bullion",
+                  "pos": {
+                    "code": "nn",
+                    "text": "n",
+                    "tooltip": "noun"
+                  }
+                }
+              ]
+            },
+            {
+              "text": "bullish",
+              "pos": {
+                "code": "adj",
+                "text": "adj",
+                "tooltip": "adjective"
+              },
+              "syn": [
+                {
+                  "text": "bulled",
+                  "pos": {
+                    "code": "adj",
+                    "text": "adj",
+                    "tooltip": "adjective"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "bull",
+          "pos": {
+            "code": "vrb",
+            "text": "v",
+            "tooltip": "verb"
+          },
+          "ts": "bʊl",
+          "tr": [
+            {
+              "text": "bully",
+              "pos": {
+                "code": "adj",
+                "text": "adj",
+                "tooltip": "adjective"
+              },
+              "syn": [
+                {
+                  "text": "bulling",
+                  "pos": {
+                    "code": "adj",
+                    "text": "adj",
+                    "tooltip": "adjective"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "ant": []
+    },
+    "en-pt": {
+      "regular": [
+        {
+          "text": "bull",
+          "pos": {
+            "code": "nn",
+            "text": "n",
+            "tooltip": "noun"
+          },
+          "ts": "bʊl",
+          "tr": [
+            {
+              "text": "touro",
+              "pos": {
+                "code": "nn",
+                "text": "n",
+                "tooltip": "noun"
+              },
+              "gen": {
+                "code": "m",
+                "text": "m",
+                "tooltip": "masculine"
+              },
+              "syn": [
+                {
+                  "text": "novilho",
+                  "pos": {
+                    "code": "nn",
+                    "text": "n",
+                    "tooltip": "noun"
+                  },
+                  "gen": {
+                    "code": "m",
+                    "text": "m",
+                    "tooltip": "masculine"
+                  }
+                },
+                {
+                  "text": "boi",
+                  "pos": {
+                    "code": "nn",
+                    "text": "n",
+                    "tooltip": "noun"
+                  },
+                  "gen": {
+                    "code": "m",
+                    "text": "m",
+                    "tooltip": "masculine"
+                  }
+                },
+                {
+                  "text": "bula",
+                  "pos": {
+                    "code": "nn",
+                    "text": "n",
+                    "tooltip": "noun"
+                  },
+                  "gen": {
+                    "code": "f",
+                    "text": "f",
+                    "tooltip": "feminine"
+                  }
+                },
+                {
+                  "text": "tourada",
+                  "pos": {
+                    "code": "nn",
+                    "text": "n",
+                    "tooltip": "noun"
+                  },
+                  "gen": {
+                    "code": "f",
+                    "text": "f",
+                    "tooltip": "feminine"
+                  }
+                },
+                {
+                  "text": "altista",
+                  "pos": {
+                    "code": "nn",
+                    "text": "n",
+                    "tooltip": "noun"
+                  },
+                  "gen": {
+                    "code": "m",
+                    "text": "m",
+                    "tooltip": "masculine"
+                  }
+                },
+                {
+                  "text": "toiro",
+                  "pos": {
+                    "code": "nn",
+                    "text": "n",
+                    "tooltip": "noun"
+                  },
+                  "gen": {
+                    "code": "m",
+                    "text": "m",
+                    "tooltip": "masculine"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }

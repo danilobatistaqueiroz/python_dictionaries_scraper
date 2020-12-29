@@ -34,3 +34,17 @@ mix-translations.py trabalha na pasta translations
 thesaurus.py trabalha com imput, e gera output
 
 criar para cada 1000 palavras uma pasta
+
+
+
+
+######################################
+
+
+Alguns audios de pronúncia estão no singular, e no infinitivo, porém algumas palavras estão escritas no gerúndio ou no plural.
+Quando isso ocorrer, o segundo IPA estará também no singular e infinitivo
+Porém, o primeiro IPA vai representar a fonética da palavra quer no gerúndio quer no plural.
+
+
+
+sinonimos com 100 vão ser brancos negrito, 90 serão brancos, 50 serão cinzas
