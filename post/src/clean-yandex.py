@@ -1,10 +1,15 @@
+word_list = '1-1000'
+
 def remove_same_word(word, terms):
-    return terms.remove(word)
-
-
+    listterms = terms.split(',')
+    try:
+        while word in listterms: listterms.remove(word)
+        return ','.join(listterms)
+    except:
+        return ','.join(listterms)
 
 def clean():
-    rd = open ('../../../output/3001-4000-yandex.csv', 'r')
+    rd = open (f'../output/{word_list}-yandex.csv', 'r')
     counter = 0
     output = []
     while True:
@@ -21,7 +26,10 @@ def clean():
         fields[2] = pt
         output.append('\t'.join(fields))
     rd.close()
-    file = open('../../../output/clean/3001-4000-yandex-clean.csv','w')
+    file = open(f'{word_list}-yandex-out.csv','w')
     file.write('\n'.join(output))
+    file.close()
+
+
 
 clean()

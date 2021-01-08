@@ -1,17 +1,11 @@
 import requests
 import json
-import config
 import traceback 
 
-word_list = config.word_list
-
-INPUT_FILE_PATH = f"input/{word_list}.csv"
-OUTPUT_FILE_PATH = f"output/{word_list}-yandex.csv"
-
-def readFile():
+def readFile(input_file):
     full_content = ''
     try:
-        file = open(INPUT_FILE_PATH,"r")
+        file = open(input_file,"r")
         count_line = 0
         for line in file:
             count_line+=1
@@ -35,8 +29,8 @@ def readFile():
         traceback.print_exc() 
     return full_content
 
-def writeFile(content):
-    file = open(OUTPUT_FILE_PATH,"a+")
+def writeFile(output_file, content):
+    file = open(output_file,"a+")
     file.write(content)
 
 def get_data(word):
@@ -66,5 +60,6 @@ def translations(data):
     txt = remove_dups_list(txt)
     return txt
 
-full_content = readFile()
-writeFile(full_content)
+def do_job(input_file, output_file):
+    full_content = readFile(input_file)
+    writeFile(output_file, full_content)
