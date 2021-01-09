@@ -5,8 +5,8 @@ parser.read('config.ini')[0]
 word_list = parser.get('configurations', 'word_list')
 start_line = parser.get('configurations', 'start_line')
 
-ini = 28001
-end = 29000
+ini = 32001
+end = 33000
 
 from dictionaries.yandex import yandex
 from dictionaries.thesaurus import thesaurus

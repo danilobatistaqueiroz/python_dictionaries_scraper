@@ -1,6 +1,7 @@
 import workfiles
 
-workfiles.word_list = '1-1000'
+workfiles.word_list = '1001-2000'
+workfiles.dictionary = 'thesaurus'
 
 def add_tabs():
     print('adding tabs')
@@ -38,25 +39,6 @@ def rem_definitions_duplicate():
         workfiles.write_tmpfile(cnt,line,'a')
     rd.close()
 
-def validate_lasttmp_or_outputfile(ntabs):
-    tmp = workfiles.read_lasttmp_or_output()
-    rows = 0
-    valid = True
-    while True:
-        line = tmp.readline()
-        rows+=1
-        if not line :
-            break
-        if line.count('\t') != ntabs :
-            word = line[:line.find('\t')]
-            print('tabulacao diferente:'+str(line.count('\t'))+'-'+word)
-            valid = False
-    tmp.close()
-    if rows != 1000:
-        print(f'wrong number of lines in file:{rows}')
-        valid = False
-    return valid
-
 def rem_spell_synonyms():
     print('removing fields spell and synonyms')
     rd = workfiles.read_lasttmp_or_output()
@@ -65,14 +47,33 @@ def rem_spell_synonyms():
         line = rd.readline()
         if not line :
             break
+        line = line.replace('\n','')
         fields = line.split('\t')
         newline = fields[0]+'\t'+fields[1]+'\t'+fields[3]+'\t'+fields[4]+'\n'
         workfiles.write_tmpfile(cnt,newline,'a')
     rd.close()
 
+def sound_mp3_directory():
+    print('change the reference of sound in mp3 field')
+    rd = workfiles.read_lasttmp_or_output()
+    cnt = workfiles.new_tmpfile()
+    while True:
+        line = rd.readline()
+        if not line :
+            break
+        line = line.replace('\n','')
+        fields = line.split('\t')
+        fields[2] = workfiles.add_wordlist_dictionary_soundmp3(fields[2])
+        newline = fields[0]+'\t'+fields[1]+'\t'+fields[2]+'\t'+fields[3]+'\n'
+        workfiles.write_tmpfile(cnt,newline,'a')
+    rd.close()
+
+workfiles.rem_tmpfiles()
 add_tabs()
 rem_definitions_duplicate()
-valid = validate_lasttmp_or_outputfile(6)
+valid = workfiles.validate_number_tabs(6)
 if valid == True:
     rem_spell_synonyms()
-workfiles.rem_tmpfiles_create_outfile()
+    sound_mp3_directory()
+    workfiles.treat_line1001()
+    workfiles.rem_tmpfiles_create_outfile()
