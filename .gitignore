@@ -1,6 +1,5 @@
 __pycache__
 .history
-thesaurus
 translations
 *.mp3
 *.csv
@@ -10,3 +9,5 @@ input/**
 output/**
 mp3/**
 logs/**
+dictionaries/yandex/__pycache__/**
+post/tmp/**

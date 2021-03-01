@@ -1,6 +1,7 @@
 import requests
 import json
-import traceback 
+import traceback
+import os
 
 def readFile(input_file):
     full_content = ''
@@ -25,7 +26,9 @@ def readFile(input_file):
             full_content = ''.join([full_content, word, '\t', ipa, '\t', tra])
             full_content += '\n'
         file.close()
+        print('finalizando yandex, processamento do arquivo:'+input_file)
     except:
+        print('yandex, erro no processamento do arquivo:'+input_file)
         traceback.print_exc() 
     return full_content
 
@@ -61,5 +64,9 @@ def translations(data):
     return txt
 
 def do_job(input_file, output_file):
+    if os.path.exists(output_file):
+        print('Arquivo existente! '+output_file)
+        return
+    print(f'Iniciando arquivo:{output_file}')
     full_content = readFile(input_file)
     writeFile(output_file, full_content)

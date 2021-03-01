@@ -4,8 +4,8 @@
         {
             "type": "python",
             "request": "launch",
-            "name": "Run main.py",
-            "program": "main.py",
+            "name": "Run Current File",
+            "program": "${file}",
             "console": "integratedTerminal"
         }
     ]

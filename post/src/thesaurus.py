@@ -1,8 +1,5 @@
 import workfiles
 
-workfiles.word_list = '1001-2000'
-workfiles.dictionary = 'thesaurus'
-
 def add_tabs():
     print('adding tabs')
     rd = workfiles.read_lasttmp_or_output()
@@ -68,12 +65,17 @@ def sound_mp3_directory():
         workfiles.write_tmpfile(cnt,newline,'a')
     rd.close()
 
-workfiles.rem_tmpfiles()
-add_tabs()
-rem_definitions_duplicate()
-valid = workfiles.validate_number_tabs(6)
-if valid == True:
-    rem_spell_synonyms()
-    sound_mp3_directory()
-    workfiles.treat_line1001()
-    workfiles.rem_tmpfiles_create_outfile()
+def initialize(dictionary, word_list):
+    workfiles.word_list = word_list
+    workfiles.dictionary = dictionary
+
+def start():
+    workfiles.rem_tmpfiles()
+    add_tabs()
+    rem_definitions_duplicate()
+    valid = workfiles.validate_number_tabs(6)
+    if valid == True:
+        rem_spell_synonyms()
+        sound_mp3_directory()
+        workfiles.treat_line1001()
+        workfiles.rem_tmpfiles_create_outfile()

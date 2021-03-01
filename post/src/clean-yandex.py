@@ -1,4 +1,4 @@
-word_list = '1001-2000'
+word_list = '6001-7000'
 
 def remove_same_word(word, terms):
     listterms = terms.split(',')
@@ -17,7 +17,7 @@ def clean():
         line = rd.readline()
         if not line :
             break
-        line = line[:-1]
+        line = line.replace('\n','')
         fields = line.split('\t')
         word = fields[0]
         pt = fields[2].lower()

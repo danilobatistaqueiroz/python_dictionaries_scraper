@@ -97,9 +97,26 @@ def rem_line1001():
 
 def add_wordlist_dictionary_soundmp3(sound_field):
     if sound_field.startswith('[sound:'):
-        return sound_field[0:7] + word_list +'/'+ dictionary +'/'+ sound_field[7:]
+        mp3file = sound_field[7:]
+        #mp3file = mp3file.replace(word_list+'-','').strip()
+        return sound_field[0:7] + word_list +'/'+ dictionary +'/'+ mp3file
     else:
         return sound_field
+
+def remove_last_comma():
+    print('removing the last comma')
+    rd = read_lasttmp_or_output()
+    cnt = new_tmpfile()
+    while True:
+        line = rd.readline()
+        if not line :
+            break
+        if line.endswith(',\n'):
+            line = line[:-2]+'\n'
+        if line.endswith(','):
+            line = line[:-1]
+        write_tmpfile(cnt,line,'a')
+    rd.close()
 
 def red(text):
     return colored(255, 0, 0, text)

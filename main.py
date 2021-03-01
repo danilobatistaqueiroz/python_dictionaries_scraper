@@ -3,6 +3,14 @@ import config
 word_list = config.word_list
 start_line = config.start_line
 
+if config.dictionary == 'macmillan' :
+    from dictionaries.macmillan import macmillan
+    macmillan.word_list = word_list
+    macmillan.input_file = f'input/{word_list}.csv'
+    macmillan.output_file = f'output/{word_list}-macmillan.csv'
+    macmillan.log_file = f'logs/{word_list}-macmillan.log'
+    macmillan.do_job()
+
 if config.dictionary == 'thesaurus' :
     from dictionaries.thesaurus import thesaurus
     thesaurus.word_list = word_list
