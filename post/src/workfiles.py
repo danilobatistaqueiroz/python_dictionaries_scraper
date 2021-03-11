@@ -6,7 +6,7 @@ word_list = ''
 dictionary = ''
 tmp = '../tmp'
 out = '../out'
-output = '../../output'
+lists = '../../output'
 
 def rem_tmpfiles():
     os.system(f'rm {tmp}/{word_list}-{dictionary}.tmp*')
@@ -29,15 +29,15 @@ def get_last_tmpcnt():
     files = glob.glob(f'{tmp}/{word_list}-{dictionary}.tmp*')
     return len(files)
 
-def read_lasttmp_or_output():
+def read_lasttmp_or_lists():
     cnt = get_last_tmpcnt()
     if cnt == 0:
-        return open(f'{output}/{word_list}-{dictionary}.csv', 'r')
+        return open(f'{lists}/{word_list}-{dictionary}.csv', 'r')
     else:
         return open(f'{tmp}/{word_list}-{dictionary}.tmp{cnt}', 'r')
 
-def get_content_tmp_output():
-    rd = read_lasttmp_or_output()
+def get_content_tmp_lists():
+    rd = read_lasttmp_or_lists()
     content = rd.read()
     rd.close()
     return content
@@ -47,8 +47,8 @@ def write_tmpfile(cnt, line, oper):
         the_file.write(line)
 
 def validate_number_tabs(ntabs):
-    print('validating last tmp or output file')
-    tmp = read_lasttmp_or_output()
+    print('validating last tmp or lists file')
+    tmp = read_lasttmp_or_lists()
     rows = 0
     valid = True
     while True:
@@ -64,7 +64,7 @@ def validate_number_tabs(ntabs):
     return valid
 
 def count_words():
-    content = get_content_tmp_output()
+    content = get_content_tmp_lists()
     length = len(content.split('\n'))
     if length < 1000:
         print(red('file with less than 1000 words'))
@@ -82,7 +82,7 @@ def treat_line1001():
 
 def rem_line1001():
     print('removing the line 1001')
-    rd = read_lasttmp_or_output()
+    rd = read_lasttmp_or_lists()
     cnt = new_tmpfile()
     rows = 0
     while True:
@@ -105,7 +105,7 @@ def add_wordlist_dictionary_soundmp3(sound_field):
 
 def remove_last_comma():
     print('removing the last comma')
-    rd = read_lasttmp_or_output()
+    rd = read_lasttmp_or_lists()
     cnt = new_tmpfile()
     while True:
         line = rd.readline()

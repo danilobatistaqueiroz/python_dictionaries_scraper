@@ -7,6 +7,24 @@
             "name": "Run Current File",
             "program": "${file}",
             "console": "integratedTerminal"
+        },
+        {
+            "type": "python",
+            "request": "launch",
+            "name": "Run freedic",
+            "program": "main.py",
+            "args": [   "cleanfree"],
+            "cwd": "post/src",
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "python",
+            "request": "launch",
+            "name": "all mostcommon",
+            "program": "${workspaceFolder}/post/src/main.py",
+            "args": [   "all"],
+            "cwd": "${workspaceFolder}/post/src",
+            "console": "integratedTerminal"
         }
     ]
 }

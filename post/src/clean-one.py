@@ -1,11 +1,13 @@
 import yandex
 import babla
 
-ini = 31001
-end = 32000
+ini = 8001
+end = 9000
 dic = 'babla'
 
 print(f'limpando {dic} em {ini}-{end}')
 word_list = str(ini)+'-'+str(end)
-babla.initialize(dic,word_list)
-babla.start()
+
+dictionary = eval(dic)
+initialize = getattr(dictionary, 'initialize')(dic,word_list)
+start = getattr(dictionary, 'start')()
