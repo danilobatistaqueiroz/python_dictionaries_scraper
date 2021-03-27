@@ -415,8 +415,8 @@ def clean_lengthy_definitions(definitions):
     d = d.replace('1.','').replace('2.','').replace('3.','').replace('4.','')
     d = d.replace('5.','').replace('6.','').replace('7.','').replace('8.','')
     d = d.replace('9.','').replace('10.','').replace('11.','').replace('12.','')
-    d = d.replace('13.','').replace('14.','').replace('15.','').replace('16.','')
-    lst = d.split('<BR>')
+    definitions = d.replace('13.','').replace('14.','').replace('15.','').replace('16.','')
+    lst = definitions.split('<BR>')
     newlst = []
     cnt = 0
     for item in lst:
@@ -425,18 +425,19 @@ def clean_lengthy_definitions(definitions):
             newlst.append('')
             cnt = 0
         elif len(item) < 60:
-            item = item.replace('(','<font color="#00aaff"><u>(')
-            item = item.replace(')',')</font></u>')
-            item = item.replace('Nautical ','<font color="#00aaff"><u>Nautical </font></u>')
-            item = item.replace('Sports ','<font color="#00aaff"><u>Sports </font></u>')
-            item = item.replace('Games ','<font color="#00aaff"><u>Games </font></u>')
-            item = item.replace('Slang ','<font color="#00aaff"><u>Slang </font></u>')
-            item = item.replace('Literally ','<font color="#00aaff"><u>Literally </font></u>')
-            item = item.replace('Informal ','<font color="#00aaff"><u>Informal </font></u>')
-            item = item.replace('Offensive ','<font color="#00aaff"><u>Offensive </font></u>')
-            item = item.replace('Baseball ','<font color="#00aaff"><u>Baseball </font></u>')
-            item = item.replace('Animals ','<font color="#00aaff"><u>Animals </font></u>')
-            newlst.append(f'{cnt:02}. {item}')
+            if item.find('(') > -1 and item.find(')') > -1:
+                item = item.replace('(','<font color="#00aaff"><u>(')
+                item = item.replace(')',')</font></u>')
+                item = item.replace('Nautical ','<font color="#00aaff"><u>Nautical </font></u>')
+                item = item.replace('Sports ','<font color="#00aaff"><u>Sports </font></u>')
+                item = item.replace('Games ','<font color="#00aaff"><u>Games </font></u>')
+                item = item.replace('Slang ','<font color="#00aaff"><u>Slang </font></u>')
+                item = item.replace('Literally ','<font color="#00aaff"><u>Literally </font></u>')
+                item = item.replace('Informal ','<font color="#00aaff"><u>Informal </font></u>')
+                item = item.replace('Offensive ','<font color="#00aaff"><u>Offensive </font></u>')
+                item = item.replace('Baseball ','<font color="#00aaff"><u>Baseball </font></u>')
+                item = item.replace('Animals ','<font color="#00aaff"><u>Animals </font></u>')
+                newlst.append(f'{cnt:02}. {item}')
         else:
             cnt-=1
     definitions = '<BR>'.join(newlst)
@@ -505,6 +506,7 @@ def workfile():
         
         cambridge_pt = remove_dirt(cambridge_pt)
 
+        reverso = reverso.replace('"','')
         reverso = remove_less_half_frequency(reverso)
         reverso = remove_same_word(word,reverso)
         reverso = only_four_translations(reverso)

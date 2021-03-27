@@ -2,7 +2,7 @@ import workfiles
 
 def add_tabs():
     print('adding tabs')
-    rd = workfiles.read_lasttmp_or_output()
+    rd = workfiles.read_lasttmp_or_lists()
     cnt = workfiles.new_tmpfile()
     while True:
         line = rd.readline()
@@ -17,7 +17,7 @@ def add_tabs():
     rd.close()
 
 def rem_definitions_duplicate():
-    rd = workfiles.read_lasttmp_or_output()
+    rd = workfiles.read_lasttmp_or_lists()
     cnt = workfiles.new_tmpfile()
     while True:
         line = rd.readline()
@@ -38,7 +38,7 @@ def rem_definitions_duplicate():
 
 def rem_spell_synonyms():
     print('removing fields spell and synonyms')
-    rd = workfiles.read_lasttmp_or_output()
+    rd = workfiles.read_lasttmp_or_lists()
     cnt = workfiles.new_tmpfile()
     while True:
         line = rd.readline()
@@ -52,7 +52,7 @@ def rem_spell_synonyms():
 
 def sound_mp3_directory():
     print('change the reference of sound in mp3 field')
-    rd = workfiles.read_lasttmp_or_output()
+    rd = workfiles.read_lasttmp_or_lists()
     cnt = workfiles.new_tmpfile()
     while True:
         line = rd.readline()

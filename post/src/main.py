@@ -1,8 +1,9 @@
 import sys
 from commonwords import onlywords, clean_babla, equalize_yandex_linguee, clean_freedic, clean_export, clean_all
 
-word_list = 'most_common_04001_05000'
+word_list = 'most_common_40001_41284'
 clean_export.clear(word_list)
+print('running '+word_list)
 
 if sys.argv[1]=='onlywords':
     onlywords.initialize('all',word_list) #exports word \t macmillan-phrases \t freedic-phrases \t macmillan-phrases-pt \t freedic-phrases-pt

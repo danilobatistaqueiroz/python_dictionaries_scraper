@@ -99,7 +99,7 @@ def add_wordlist_dictionary_soundmp3(sound_field):
     if sound_field.startswith('[sound:'):
         mp3file = sound_field[7:]
         #mp3file = mp3file.replace(word_list+'-','').strip()
-        return sound_field[0:7] + word_list +'/'+ dictionary +'/'+ mp3file
+        return sound_field[0:7] + word_list +'/'+ dictionary +'/'+ word_list + '-' + mp3file
     else:
         return sound_field
 

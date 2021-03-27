@@ -1,9 +1,10 @@
 import yandex
 import babla
+import thesaurus
 
-ini = 8001
-end = 9000
-dic = 'babla'
+ini = 1
+end = 1000
+dic = 'thesaurus'
 
 print(f'limpando {dic} em {ini}-{end}')
 word_list = str(ini)+'-'+str(end)
